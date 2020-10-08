@@ -328,6 +328,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fd8640a48c24d48938863a11740d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceLeft: {fileID: 0}
+  faceRight: {fileID: 0}
+  faceUp: {fileID: 0}
+  faceDown: {fileID: 0}
 --- !u!1 &279207634
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,9 +649,10 @@ GameObject:
   - component: {fileID: 599982979}
   - component: {fileID: 599982978}
   - component: {fileID: 599982981}
-  m_Layer: 2
-  m_Name: IconRight
-  m_TagString: Untagged
+  - component: {fileID: 599982982}
+  m_Layer: 0
+  m_Name: IconOne
+  m_TagString: RegOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,7 +723,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3869149e3f6fb6a4c8ce0e1d2209348f, type: 3}
-  m_Color: {r: 0.5849056, g: 0, b: 0.026961999, a: 1}
+  m_Color: {r: 0.7169812, g: 0.3551086, b: 0.37210932, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -756,6 +761,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409dffdf9007cc74e8b2db7699edc2e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &599982982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599982977}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6370ee932694476448b8203bb13dfcc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &643523855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6712935321649307413, guid: 13c44fc3edc873e42869f0f86b524626,
@@ -774,6 +791,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fd8640a48c24d48938863a11740d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceLeft: {fileID: 0}
+  faceRight: {fileID: 0}
+  faceUp: {fileID: 0}
+  faceDown: {fileID: 0}
 --- !u!1 &667410180
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +998,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fd8640a48c24d48938863a11740d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceLeft: {fileID: 0}
+  faceRight: {fileID: 0}
+  faceUp: {fileID: 0}
+  faceDown: {fileID: 0}
 --- !u!1 &999798391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1658,7 @@ GameObject:
   - component: {fileID: 1657190715}
   - component: {fileID: 1657190714}
   m_Layer: 2
-  m_Name: IconLeft
+  m_Name: IconTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1781,7 @@ GameObject:
   - component: {fileID: 1755785943}
   - component: {fileID: 1755785942}
   m_Layer: 2
-  m_Name: IconDown
+  m_Name: IconThree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1884,6 +1909,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fd8640a48c24d48938863a11740d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceLeft: {fileID: 0}
+  faceRight: {fileID: 0}
+  faceUp: {fileID: 0}
+  faceDown: {fileID: 0}
 --- !u!1 &1972128898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +2012,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fd8640a48c24d48938863a11740d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faceLeft: {fileID: 1797937689}
+  faceRight: {fileID: 271176344}
+  faceUp: {fileID: 643523855}
+  faceDown: {fileID: 959515826}
 --- !u!1 &2027512504
 GameObject:
   m_ObjectHideFlags: 0

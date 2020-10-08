@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //PURPOSE: Using raycasts, have the mouse of the player direct the way the face is oriented
 //USAGE: Place this script of the face in the center of the scene 
@@ -28,9 +29,12 @@ public class FaceBehavior : MonoBehaviour
         //did we hit something? 
 
         if (faceRayHit.collider != null)// if we actually hit it 
-        { 
-           //instantiate new face prefab at the position of the face
-           
+        {
+            //instantiate new face prefab at the position of the face
+            if (faceRayHit.transform.name == "IconOne"&& Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("RegretOne");
+            }
         }
     }
 }
