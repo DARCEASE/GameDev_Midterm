@@ -1657,7 +1657,7 @@ GameObject:
   - component: {fileID: 1657190716}
   - component: {fileID: 1657190715}
   - component: {fileID: 1657190714}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: IconTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3869149e3f6fb6a4c8ce0e1d2209348f, type: 3}
-  m_Color: {r: 0.5849056, g: 0, b: 0.026961999, a: 1}
+  m_Color: {r: 0.11739592, g: 0.58431375, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1780,7 +1780,7 @@ GameObject:
   - component: {fileID: 1755785944}
   - component: {fileID: 1755785943}
   - component: {fileID: 1755785942}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: IconThree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1881,7 +1881,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3869149e3f6fb6a4c8ce0e1d2209348f, type: 3}
-  m_Color: {r: 0.5849056, g: 0, b: 0.026961999, a: 1}
+  m_Color: {r: 0.9245283, g: 0.6781016, b: 0.056692798, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

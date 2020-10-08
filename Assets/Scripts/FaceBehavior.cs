@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//PURPOSE: Using raycasts, have the mouse of the player direct the way the face is oriented
+//PURPOSE:game manager pretty much, controls what thigns do when player clicks on them 
 //USAGE: Place this script of the face in the center of the scene 
 public class FaceBehavior : MonoBehaviour
 {
@@ -34,6 +34,14 @@ public class FaceBehavior : MonoBehaviour
             if (faceRayHit.transform.name == "IconOne"&& Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene("RegretOne");
+            }
+            if (faceRayHit.transform.name == "IconTwo" && Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("RegretTwo");
+            }
+            if (faceRayHit.transform.name == "IconThree" && Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene("RegretThree");
             }
         }
     }
