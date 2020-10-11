@@ -41,7 +41,12 @@ public class RegretOne : MonoBehaviour
             }
         }
         //when i right click, the image on the computer should change 
-
+        compScreenSpr.GetComponent<SpriteRenderer>().sprite = compScreen[screenID]; 
+        if (Input.GetMouseButtonDown(0))
+        {
+            screenID = Random.Range(0, 3); // last numb of array 
+            
+        }
         // on a timer, the phone on the desk should randomly vibrate 
 
         
