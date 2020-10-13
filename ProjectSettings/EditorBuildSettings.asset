@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/StartScreen.unity
+    guid: c2be8d840f462a6428f8d1e43cb4c97c
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 32d213d88ab8ecf4da3b392353f30a6c
+  - enabled: 1
+    path: Assets/Scenes/RegretOne.unity
+    guid: d00d42938e4b85644a0ccb85e7a97c1b
   m_configObjects: {}

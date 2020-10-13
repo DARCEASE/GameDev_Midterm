@@ -23,7 +23,7 @@ public class AnimInput : MonoBehaviour
         if (animTimer >= vibrate)
         {
             myAnim.SetBool("isVibing", true);
-            vibrate = Random.Range(2, 6);
+            vibrate = Random.Range(2, 4);
 
         }
         if (animTimer >= vibrate + 1)
