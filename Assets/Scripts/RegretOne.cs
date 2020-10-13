@@ -14,9 +14,8 @@ public class RegretOne : MonoBehaviour
     public GameObject timeChngSpr;//obj that will have the spr change for timeOD
     public int timeID;
     public float dayTimer;
+   
 
-
-    
     void Start()
     {
         
@@ -28,29 +27,31 @@ public class RegretOne : MonoBehaviour
         //on a timer the time of day should change into the next phase on the window
         dayTimer += Time.deltaTime;
         timeChngSpr.GetComponent<SpriteRenderer>().sprite = timeOD[timeID];
-        if (dayTimer > 10)
+        compScreenSpr.GetComponent<SpriteRenderer>().sprite = compScreen[screenID];  
+
+        if (dayTimer > 6)
         {
-            //
             dayTimer = 0;
             if (timeID != 2) //if the timeID is anything but element 2, keep going. 
             {
                 timeID += 1;
             }
             else if (timeID == 2) // but if it is element then stop the array 
-            { 
-               
+            {
+                screenID = 3;
             }
         }
-        //when i right click, the image on the computer should change 
-        compScreenSpr.GetComponent<SpriteRenderer>().sprite = compScreen[screenID]; 
-        if (Input.GetMouseButtonDown(0))
+
+        //when I right click, the image on the computer should change 
+        if (Input.GetMouseButtonDown(0) && timeID != 2)
         {
-            screenID = Random.Range(0, 3); // last numb of array 
-            
+            screenID = Random.Range(0,2); // last numb of array   
         }
+        
+
         // on a timer, the phone on the desk should randomly vibrate 
 
 
-        
+
     }
 }
