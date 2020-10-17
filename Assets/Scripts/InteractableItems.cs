@@ -5,11 +5,16 @@ using UnityEngine;
 public class InteractableItems : MonoBehaviour
 {
     public GameObject handSanitizer;
-    public Renderer rend;
+    //public GameObject leftNoteB;
+    public RegretOne rOne;
+    public GameObject rOneScr;
+    
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        rOne = rOneScr.GetComponent<RegretOne>();
+        handSanitizer.SetActive(false);
+        //leftNoteB.SetActive(false);
     }
 
     // Update is called once per frame
@@ -17,20 +22,16 @@ public class InteractableItems : MonoBehaviour
     {
         
     }
-    void OnMouseEnter()
-    {
-        rend.material.color = Color.red;
-    }
 
-    // ...the red fades out to cyan as the mouse is held over...
-    void OnMouseOver()
+    public void ClickSanitizer()
     {
-        rend.material.color -= new Color(0.1F, 0, 0) * Time.deltaTime;
+        handSanitizer.SetActive(true);
+        rOne.hasClicked += 1;
+       
     }
-
-    // ...and the mesh finally turns white when the mouse moves away.
-    void OnMouseExit()
+    public void ClickLeftNotebook()
     {
-        rend.material.color = Color.white;
+        //leftNoteB.SetActive(true);
     }
+    
 }

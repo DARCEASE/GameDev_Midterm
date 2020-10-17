@@ -14,7 +14,7 @@ public class RegretOne : MonoBehaviour
     public GameObject timeChngSpr;//obj that will have the spr change for timeOD
     public int timeID;
     public float dayTimer;
-   
+    public int hasClicked;
 
     void Start()
     {
