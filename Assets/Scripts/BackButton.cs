@@ -10,6 +10,7 @@ public class BackButton : MonoBehaviour
     public GameObject rightNotePanel;
     public GameObject plantPanel;
     public GameObject spikePosterPanel;
+    public GameObject cellPhonePanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +34,6 @@ public class BackButton : MonoBehaviour
         rightNotePanel.SetActive(false);
         plantPanel.SetActive(false);
         spikePosterPanel.SetActive(false);
+        cellPhonePanel.SetActive(false);
     }
 }

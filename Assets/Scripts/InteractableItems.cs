@@ -10,6 +10,8 @@ public class InteractableItems : MonoBehaviour
     public GameObject rightNoteB;
     public GameObject plant;
     public GameObject spikePoster;
+    public GameObject lampLight;
+    public bool lampOn;
 
     public RegretOne rOne;
     public GameObject rOneScr;
@@ -23,6 +25,8 @@ public class InteractableItems : MonoBehaviour
         rightNoteB.SetActive(false);
         plant.SetActive(false);
         spikePoster.SetActive(false);
+        lampLight.SetActive(false);
+        lampOn = false;
     }
 
     // Update is called once per frame
@@ -58,4 +62,37 @@ public class InteractableItems : MonoBehaviour
         spikePoster.SetActive(true);
         rOne.hasClicked += 1;
     }
+
+    //when i click on the mouse button, sift through all the screen images
+    public void ClickMouse()
+    {
+        rOne.screenID = Random.Range(0, 2);
+        if (rOne.timeID == 2)
+        {
+            rOne.screenID = 3;
+        }
+    }
+    public void TurnLampOn()
+    {
+        if (lampOn == false)
+        {
+            lampOn = true;
+            lampLight.SetActive(true);
+            
+        }
+        else if (lampOn == true)
+        {
+            lampOn = false;
+            lampLight.SetActive(false);        
+        }
+       
+        
+    }
+
+    //if the phone is vibrating look at it and see a text 
+    public void AnswerText()
+    {
+        
+    }
+
 }
