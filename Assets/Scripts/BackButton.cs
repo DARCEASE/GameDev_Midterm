@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class BackButton : MonoBehaviour
 {
     public GameObject sanitizerPanel;
+    public GameObject leftNotePanel;
+    public GameObject rightNotePanel;
+    public GameObject plantPanel;
+    public GameObject spikePosterPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +29,9 @@ public class BackButton : MonoBehaviour
     public void GoRegOne() // go back to scene one 
     {
         sanitizerPanel.SetActive(false);
+        leftNotePanel.SetActive(false);
+        rightNotePanel.SetActive(false);
+        plantPanel.SetActive(false);
+        spikePosterPanel.SetActive(false);
     }
 }

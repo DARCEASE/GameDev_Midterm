@@ -26,7 +26,7 @@ public class AnimInput : MonoBehaviour
             vibrate = Random.Range(2, 4);
 
         }
-        if (animTimer >= vibrate + 1)
+        if (animTimer >= vibrate + 1) // after a couple of frames, turn off the animation vibration
              {
                  animTimer = 0;
                  myAnim.SetBool("isVibing", false);

@@ -35,7 +35,7 @@ public class FaceBehavior : MonoBehaviour
             {
                 SceneManager.LoadScene("RegretOne");
             }
-            if (faceRayHit.transform.name == "IconTwo" && Input.GetMouseButtonDown(0))
+            /*if (faceRayHit.transform.name == "IconTwo" && Input.GetMouseButtonDown(0))
             {
                 SceneManager.LoadScene("RegretTwo");
             }
@@ -43,6 +43,7 @@ public class FaceBehavior : MonoBehaviour
             {
                 SceneManager.LoadScene("RegretThree");
             }
+            */
         }
     }
 }
