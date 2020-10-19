@@ -19,6 +19,9 @@ public class RegretOne : MonoBehaviour
     public int hasClicked;
     public GameObject phone;
 
+    public AudioSource phoneBoop;
+
+
     void Start()
     {
         phone.SetActive(false);
@@ -45,7 +48,12 @@ public class RegretOne : MonoBehaviour
             //instantiate new face prefab at the position of the face
             if (RayHit.transform.name == "phoneVibe" && Input.GetMouseButtonDown(0))
             {
+                
                 phone.SetActive(true);
+                if (phoneBoop.isPlaying == false)
+                { 
+                    phoneBoop.Play();
+                }
             }
         }
          //based on how many things you clicked the time of day should change into the next phase on the window

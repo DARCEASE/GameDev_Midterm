@@ -15,6 +15,11 @@ public class InteractableItems : MonoBehaviour
 
     public RegretOne rOne;
     public GameObject rOneScr;
+
+    public AudioSource clickSound;
+    public AudioSource flipSound;
+    public AudioSource lightSwitchSound;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -44,11 +49,13 @@ public class InteractableItems : MonoBehaviour
     }
     public void ClickLeftNotebook()
     {
+        flipSound.Play();
         leftNoteB.SetActive(true);
         rOne.hasClicked += 1;
     }
     public void ClickRightNotebook()
     {
+        flipSound.Play();
         rightNoteB.SetActive(true);
         rOne.hasClicked += 1;
     }
@@ -66,6 +73,7 @@ public class InteractableItems : MonoBehaviour
     //when i click on the mouse button, sift through all the screen images
     public void ClickMouse()
     {
+        clickSound.Play();
         rOne.screenID = Random.Range(0, 2);
         if (rOne.timeID == 2)
         {
@@ -74,6 +82,7 @@ public class InteractableItems : MonoBehaviour
     }
     public void TurnLampOn()
     {
+        lightSwitchSound.Play();
         if (lampOn == false)
         {
             lampOn = true;

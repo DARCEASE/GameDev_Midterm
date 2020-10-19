@@ -11,6 +11,8 @@ public class BackButton : MonoBehaviour
     public GameObject plantPanel;
     public GameObject spikePosterPanel;
     public GameObject cellPhonePanel;
+
+    public AudioSource pressedStart;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,10 @@ public class BackButton : MonoBehaviour
 
     public void GoBack()
     {
-        SceneManager.LoadScene("MainScene");
+       
+            SceneManager.LoadScene("MainScene");
+        
+        
     }
     public void GoRegOne() // go back to scene one 
     {
