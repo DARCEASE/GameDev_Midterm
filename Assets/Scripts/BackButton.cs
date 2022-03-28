@@ -23,13 +23,16 @@ public class BackButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetButtonDown("Cancel"))
+        {
+            GoRegOne();
+        }
     }
 
-    public void GoBack()
+    public void GoHome()
     {
        
-            SceneManager.LoadScene("RegretOne"); // updated for arcade but usually will lead to game scene 
+            SceneManager.LoadScene("StartScreen"); // updated for arcade but usually will lead to game scene 
         
         
     }

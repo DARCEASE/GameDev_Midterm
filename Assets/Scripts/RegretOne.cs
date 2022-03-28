@@ -83,6 +83,11 @@ public class RegretOne : MonoBehaviour
             screenID = 3;
             goHomeButt.SetActive(true);
 
+            if(Input.GetButtonDown("Cancel"))
+            {
+                SceneManager.LoadScene("StartScreen");
+            }
+
             //if youre on the go home screen instantiate a go home button that will take you back to the start screen
         }
 
