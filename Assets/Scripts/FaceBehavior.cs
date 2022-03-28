@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//PURPOSE:game manager pretty much, controls what thigns do when player clicks on the icons, grows the plant etc, etc. 
+//PURPOSE:game manager pretty much, controls what thigns do when player clicks on the icons, grows the plant etc, etc. icon  
 //USAGE: Place this script of the face in the center of the scene 
 public class FaceBehavior : MonoBehaviour
 {

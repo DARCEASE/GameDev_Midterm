@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 //purpose: game manager to RegretOne 
 //usage: place this on an empty game object and drag it into the scene 
@@ -20,16 +21,20 @@ public class RegretOne : MonoBehaviour
     public GameObject phone;
 
     public AudioSource phoneBoop;
+    public GameObject goHomeButt;
 
 
     void Start()
     {
+        goHomeButt.SetActive(false);
         phone.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //for arcade build - will restart the game 
+
         //raycast will from the face to anywhere the mouse is on screen
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //mouse curspor poition in world 
         Vector2 screenToMouseCursor = mousePos - transform.position; 
@@ -46,7 +51,7 @@ public class RegretOne : MonoBehaviour
         if (RayHit.collider != null)// if we actually hit it 
         {
             //instantiate new face prefab at the position of the face
-            if (RayHit.transform.name == "phoneVibe" && Input.GetMouseButtonDown(0))
+            if (RayHit.transform.name == "phoneVibe" && Input.GetMouseButtonDown(0) && Input.GetButtonDown("Submit"))
             {
                 
                 phone.SetActive(true);
@@ -76,6 +81,9 @@ public class RegretOne : MonoBehaviour
         else if (timeID == 2) // but if it is element 2 then stop the array 
         {
             screenID = 3;
+            goHomeButt.SetActive(true);
+
+            //if youre on the go home screen instantiate a go home button that will take you back to the start screen
         }
 
         

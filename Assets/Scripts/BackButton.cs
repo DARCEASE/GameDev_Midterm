@@ -28,7 +28,7 @@ public class BackButton : MonoBehaviour
     public void GoBack()
     {
        
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("RegretOne"); // updated for arcade but usually will lead to game scene 
         
         
     }

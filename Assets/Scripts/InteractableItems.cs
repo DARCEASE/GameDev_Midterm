@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //purpose: home to all of the functions that call for a closer look into the objects on the desk
 //usage: place this on the button that 
 public class InteractableItems : MonoBehaviour
@@ -32,6 +33,7 @@ public class InteractableItems : MonoBehaviour
         spikePoster.SetActive(false);
         lampLight.SetActive(false);
         lampOn = false;
+        
     }
 
     // Update is called once per frame
@@ -80,7 +82,11 @@ public class InteractableItems : MonoBehaviour
             rOne.screenID = 3;
         }
     }
-    public void TurnLampOn()
+    public void GoHome() // when you click the gohome button restart the game
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
+        public void TurnLampOn()
     {
         lightSwitchSound.Play();
         if (lampOn == false)
@@ -103,5 +109,6 @@ public class InteractableItems : MonoBehaviour
     {
         
     }
+
 
 }
