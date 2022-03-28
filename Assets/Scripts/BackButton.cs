@@ -13,6 +13,7 @@ public class BackButton : MonoBehaviour
     public GameObject cellPhonePanel;
 
     public AudioSource pressedStart;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +35,15 @@ public class BackButton : MonoBehaviour
     }
     public void GoRegOne() // go back to scene one 
     {
-        sanitizerPanel.SetActive(false);
-        leftNotePanel.SetActive(false);
-        rightNotePanel.SetActive(false);
-        plantPanel.SetActive(false);
-        spikePosterPanel.SetActive(false);
-        cellPhonePanel.SetActive(false);
+        
+        
+            sanitizerPanel.SetActive(false);
+            leftNotePanel.SetActive(false);
+            rightNotePanel.SetActive(false);
+            plantPanel.SetActive(false);
+            spikePosterPanel.SetActive(false);
+            cellPhonePanel.SetActive(false);
+        
     }
 }
+

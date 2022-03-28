@@ -51,7 +51,7 @@ public class RegretOne : MonoBehaviour
         if (RayHit.collider != null)// if we actually hit it 
         {
             //instantiate new face prefab at the position of the face
-            if (RayHit.transform.name == "phoneVibe" && Input.GetMouseButtonDown(0) && Input.GetButtonDown("Submit"))
+            if (RayHit.transform.name == "phoneVibe" && Input.GetMouseButtonDown(0) || Input.GetButtonDown("Submit"))
             {
                 
                 phone.SetActive(true);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 //purpose: home to all of the functions that call for a closer look into the objects on the desk
 //usage: place this on the button that 
 public class InteractableItems : MonoBehaviour
